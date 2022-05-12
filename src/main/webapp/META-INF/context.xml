@@ -1,0 +1,8 @@
+<!-- It seems to be not required -->
+<Context>
+    <!-- This will register Weld's BeanManager factory in Tomcat's JNDI -->
+    <Resource name="BeanManager"
+              auth="Container"
+              type="javax.enterprise.inject.spi.BeanManager"
+              factory="org.jboss.weld.resources.ManagerObjectFactory" />
+</Context>
